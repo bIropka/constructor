@@ -1,0 +1,28 @@
+.header-nav {
+    background: #d8a00a;
+}
+nav, nav ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    padding: 5px 10px 7px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: lowercase;
+    border: 2px solid transparent;
+}
+nav ul li a:hover {
+    background: #964B00;
+}
+nav ul li a:active {
+    border: 2px solid #d8a00a
+}

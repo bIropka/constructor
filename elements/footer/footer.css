@@ -1,0 +1,5 @@
+footer[role='contentinfo'] {
+    display: block;
+    width: 100%;
+    flex: 0 0 auto;
+}

@@ -1,0 +1,96 @@
+@import url('../general/fonts.css');
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000000;
+    font-family: 'Century Gothic Regular', sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #ffffff;
+}
+a {
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+header[role='banner'] {
+    display: block;
+    width: 100%;
+    flex: 0 0 auto;
+}
+main {
+    display: block;
+    width: 100%;
+    flex: 1 0 auto;
+}
+footer[role='contentinfo'] {
+    display: block;
+    width: 100%;
+    flex: 0 0 auto;
+}
+.wrapper-inner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 1%;
+}
+.wrapper.content-width-small .wrapper-inner {
+    max-width: 980px;
+}
+.wrapper.content-width-medium .wrapper-inner {
+    max-width: 1280px;
+}
+
+/* header-nav */
+.header-nav {
+    background: #d8a00a;
+}
+nav, nav ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+.header-nav-left nav ul {
+    text-align: left;
+}
+.header-nav-right nav ul {
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    padding: 5px 10px 7px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: lowercase;
+    border: 2px solid transparent;
+}
+nav ul li a:hover {
+    background: #964B00;
+}
+nav ul li a:active {
+    border: 2px solid #d8a00a
+}
+
+
+
