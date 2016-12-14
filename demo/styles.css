@@ -8,7 +8,7 @@
     box-sizing: border-box;
     font-size: 14px;
     line-height: 1.4;
-    color: #000000;
+    color: #333333;
     font-family: 'Century Gothic Regular', sans-serif;
 }
 html, body {
@@ -385,8 +385,9 @@ footer[role='contentinfo'] .wrapper-inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 20px 0;
 }
-.footer-element {
+.footer_element {
     display: block;
     width: 30%;
 }
@@ -394,9 +395,60 @@ footer[role='contentinfo'] .wrapper-inner {
 .footer_logo {
     display: block;
     width: 200px;
+    margin-bottom: 10px;
 }
 
+.footer_title {
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.footer_title:before, .footer_title:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #52ac62;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.footer_title:after {
+    background: #333333;
+    left: 40%;
+    z-index: 2;
+}
+.footer_element ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer_element ul li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    background: #333333;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
 
-
-
-
+.footer_element p {
+    margin: 5px 0;
+}
+.footer_element a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.footer_element .footer_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 5px;
+}
