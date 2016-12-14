@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шаблон страницы</title>
+    <link rel="stylesheet" href="../libs/fontAwesome/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,11 +13,14 @@
 
     <header role="banner">
 
-        <div class="wrapper-inner">
+        <div class="header-nav">
 
-            <div class="header-nav">
+            <div class="wrapper-inner">
 
                 <nav>
+
+                    <i class="fa fa-bars"></i>
+
                     <ul>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Контакты</a></li>
@@ -25,7 +29,45 @@
                         <li><a href="#">Доставка и оплата</a></li>
                         <li><a href="#">Карта сайта</a></li>
                     </ul>
+
                 </nav>
+
+            </div>
+
+        </div>
+
+        <div class="wrapper-inner">
+
+            <div class="header-info">
+
+                <a href="index.html" class="header-info_logo">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+
+                <form action="#" class="header-info_form-search">
+
+                    <label>
+                        <input type="text" placeholder="поиск">
+                    </label>
+
+                    <button type="submit">
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+
+                </form>
+
+                <div class="header-info_address">
+                    <div class="city-name">Санкт-Петербург</div>
+                    <p>Вознесенский пр., д 17, лит. Б</p>
+                    <p>Время работы: Пн - Сб 9:00 - 18:00</p>
+                </div>
+
+                <div class="header-info_separator"></div>
+
+                <div class="header-info_callback">
+                    <a href="tel:+74957300000">+7 (495) 730-00-00</a>
+                    <button>обратный звонок</button>
+                </div>
 
             </div>
 
@@ -33,15 +75,79 @@
 
     </header>
 
-    <main>
+    <div class="content-block">
 
-    </main>
+        <div class="wrapper-inner">
+
+            <aside class="sidebar-before">
+
+                левый сайдбар
+
+            </aside>
+
+            <aside class="sidebar-after">
+
+                правый сайдбар
+
+            </aside>
+
+            <main>
+
+                основной контент
+
+            </main>
+
+        </div>
+
+    </div>
 
     <footer role="contentinfo">
 
-        <div class="wrapper-inner-small">
+        <div class="wrapper-inner">
 
+            <div class="footer-element">
 
+                <div class="footer-title">о компании</div>
+
+                <a href="index.html" class="footer_logo">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+
+                <p>
+                    Высококачественные строительные работы в Санкт-Петербурге и Москве по низким ценам с гарантией. Продажа строительных материалов с доставкой на дом.
+                </p>
+
+            </div>
+
+            <div class="footer-element">
+
+                <div class="footer-title">дополнительная информация</div>
+
+                <ul>
+                    <li>скидки и акции</li>
+                    <li>доставка и оплата</li>
+                    <li>отзывы</li>
+                    <li>карта сайта</li>
+                    <li>глоссарий</li>
+                </ul>
+
+            </div>
+
+            <div class="footer-element">
+
+                <div class="footer-title">о компании</div>
+
+                <p>г. Санкт-Петербург</p>
+
+                <p>Вознесенский пр., д 17, лит. Б</p>
+
+                <a href="tel:+74957300000">+7 (495) 730-00-00</a>
+
+                <p>Время работы: Пн - Сб 9:00 - 18:00</p>
+
+                <a href="mailto:company@grandline.com">company@grandline.com</a>
+
+            </div>
 
         </div>
 
@@ -49,5 +155,7 @@
 
 </div>
 
+<script src="../libs/jquery/jquery-3.1.1.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>

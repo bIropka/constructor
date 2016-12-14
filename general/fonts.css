@@ -136,3 +136,9 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Century Gothic Bold';
+    src: url("../fonts/Century_GothicBold.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
