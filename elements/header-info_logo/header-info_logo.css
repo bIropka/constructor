@@ -1,0 +1,13 @@
+.header-info_logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    min-width: 120px;
+    margin: 10px 0 -10px;
+}
+@media (max-width: 640px) {
+    .header-info_logo {
+        display: block;
+        margin: 20px auto 10px;
+    }
+}

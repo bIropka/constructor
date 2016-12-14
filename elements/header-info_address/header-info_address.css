@@ -1,0 +1,27 @@
+.header-info_address {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 -10px;
+    padding: 0 5px;
+    text-align: left;
+    -ms-text-align-last: left;
+    text-align-last: left;
+}
+.header-info_address .city-name {
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 1.1em;
+    color: #d8a00a;
+    font-weight: 600;
+}
+.header-info_address p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.9em;
+}
+@media (max-width: 480px) {
+    .header-info_address {
+        margin: 10px 0 20px;
+    }
+}

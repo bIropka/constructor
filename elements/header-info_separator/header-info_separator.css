@@ -1,0 +1,13 @@
+.header-info_separator {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 70px;
+    border-left: 1px solid #888888;
+    margin: 10px 0 -10px;
+}
+@media (max-width: 979px) {
+    .header-info_separator {
+        display: none;
+    }
+}

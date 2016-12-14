@@ -1,7 +1,23 @@
 .header-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
     background: #fff3f3;
+    padding: 0 1%;
+    text-align: justify;
+    -ms-text-align-last: justify;
+    text-align-last: justify;
+    border: 1px solid transparent;
+}
+.header-info:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+@media (max-width: 480px) {
+    .header-info {
+        text-align: center;
+        -ms-text-align-last: center;
+        text-align-last: center;
+    }
+    .header-info:after {
+        display: none;
+    }
 }

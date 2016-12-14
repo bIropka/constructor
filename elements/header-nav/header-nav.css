@@ -1,11 +1,27 @@
 .header-nav {
     background: #d8a00a;
 }
+
 nav, nav ul {
     display: block;
     width: 100%;
     text-align: center;
     font-size: 0;
+}
+nav .fa-bars {
+    display: none;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+nav .fa-bars.active {
+    color: #000000;
+}
+.header-nav-left nav ul {
+    text-align: left;
+}
+.header-nav-right nav ul {
+    text-align: right;
 }
 nav ul li {
     display: inline-block;
@@ -25,4 +41,15 @@ nav ul li a:hover {
 }
 nav ul li a:active {
     border: 2px solid #d8a00a
+}
+@media (max-width: 768px) {
+    nav .fa-bars {
+        display: inline-block;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+    }
 }
