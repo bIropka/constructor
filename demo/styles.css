@@ -35,28 +35,35 @@ header[role='banner'] {
 }
 .content-block {
     flex: 1 0 auto;
+    position: relative;
 }
 main {
     display: block;
     width: 100%;
-    min-height: 300px;/*для примера*/
-    background: lightcoral/*для примера*/
+}
+.left-sidebar main {
+    padding-left: 23%;
+}
+.right-sidebar main {
+    padding-right: 23%;
 }
 aside {
     display: block;
-    width: 25%;
-    max-width: 300px;
-    min-height: 300px;/*для примера*/
+    width: 21%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 .sidebar-before {
-    float: left;
-    margin-right: 2%;
-    background: lightgreen/*для примера*/
+    left: 0;
 }
 .sidebar-after {
-    float: right;
-    margin-left: 2%;
-    background: lightblue;/*для примера*/
+    right: 0;
+}
+
+.block {
+    display: block;
+    width: 100%;
 }
 
 footer[role='contentinfo'] {
@@ -141,6 +148,35 @@ input:focus:-ms-input-placeholder {color: transparent;}
     content: '';
     display: block;
     clear: both;
+}
+
+.mt-50 {margin-top: 50px;}
+.mt-45 {margin-top: 50px;}
+.mt-40 {margin-top: 50px;}
+.mt-35 {margin-top: 50px;}
+.mt-30 {margin-top: 50px;}
+.mt-25 {margin-top: 50px;}
+.mt-20 {margin-top: 50px;}
+.mt-15 {margin-top: 50px;}
+.mt-10 {margin-top: 50px;}
+.mt-5 {margin-top: 50px;}
+.no-margin {margin: 0!important;}
+.mb-5 {margin-top: 50px;}
+.mb-10 {margin-top: 50px;}
+.mb-15 {margin-top: 50px;}
+.mb-20 {margin-top: 50px;}
+.mb-25 {margin-top: 50px;}
+.mb-30 {margin-top: 50px;}
+.mb-35 {margin-top: 50px;}
+.mb-40 {margin-top: 50px;}
+.mb-45 {margin-top: 50px;}
+.mb-50 {margin-top: 50px;}
+
+.column-left {
+    float: left;
+}
+.column-right {
+    float: right;
 }
 
 @media (max-width: 768px) {
@@ -467,4 +503,13 @@ nav ul li a:active {
     .footer_title {
         max-width: 300px;
     }
+}
+
+/* banner */
+.banner .column-left {
+    background: #acd97f;
+}
+
+.banner .column-right {
+    background: #fd7e07;
 }
