@@ -508,8 +508,13 @@ nav ul li a:active {
 /* banner */
 .banner .column-left {
     background: #acd97f;
+    width: 45%;
 }
 
 .banner .column-right {
     background: #fd7e07;
+    width: 55%;
+}
+.banner .banner-info {
+
 }
