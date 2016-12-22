@@ -48,6 +48,7 @@ nav ul li a:active {
     }
     nav ul {
         display: none;
+        padding-bottom: 15px;
     }
     nav ul li {
         display: block;
