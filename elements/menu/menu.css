@@ -1,0 +1,66 @@
+.menu {
+    margin-bottom: 50px;
+}
+.menu .title {
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menu > ul > li {
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #333333;
+}
+.menu > ul > li:last-child {
+    border-bottom :none;
+}
+.menu .sub-title {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.menu .sub-title:hover {
+    color: #842a2a;
+}
+.menu > ul > li ul {
+    display: none;
+}
+.menu > ul > li > ul li {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.menu > ul > li > ul li:last-child {
+    margin-bottom: 15px;
+}
+.menu > ul > li > ul li a {
+    font-size: 1em;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+.menu > ul > li > ul li a:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background: #333333;
+    position: absolute;
+    top: 0.5em;
+    left: -15px;
+}
+
+@media (max-width: 768px) {
+    .menu .title {
+        margin-bottom: 5px;
+    }
+    .menu > ul > li {
+        padding-top: 5px;
+    }
+    .menu .sub-title {
+        margin-bottom: 5px;
+    }
+}

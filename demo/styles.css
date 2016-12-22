@@ -1,4 +1,6 @@
-/* general */
+/**********************************************************************************************************************
+********** general
+***********************************************************************************************************************/
 @import url('../general/fonts.css');
 * {
     padding: 0;
@@ -244,7 +246,11 @@ input:focus:-ms-input-placeholder {color: transparent;}
     }
 }
 
-/* button */
+
+/**********************************************************************************************************************
+********** button
+***********************************************************************************************************************/
+
 .button {
     display: inline-block;
     line-height: 1;
@@ -275,7 +281,9 @@ input:focus:-ms-input-placeholder {color: transparent;}
     padding: 0.7em 3em 0.5em;
 }
 
-/* header-nav */
+/**********************************************************************************************************************
+********** header nav
+***********************************************************************************************************************/
 
 .header-nav {
     background: #d8a00a;
@@ -334,7 +342,9 @@ nav ul li a:active {
     }
 }
 
-/* header-info */
+/**********************************************************************************************************************
+********** header info
+***********************************************************************************************************************/
 
 .header-info {
     background: #fff3f3;
@@ -512,7 +522,9 @@ nav ul li a:active {
     }
 }
 
-/* footer */
+/**********************************************************************************************************************
+********** footer
+***********************************************************************************************************************/
 .footer-element {
     display: block;
     width: 30%;
@@ -588,7 +600,9 @@ nav ul li a:active {
     }
 }
 
-/* category */
+/**********************************************************************************************************************
+********** category
+***********************************************************************************************************************/
 
 .products {
     text-align: center;
@@ -767,4 +781,183 @@ nav ul li a:active {
     .product-grid-h-lg .product-card h3, .product-line-h-lg .product-card h3 {
         margin: 15px 0 10px;
     }
+}
+
+/**********************************************************************************************************************
+********** menu
+***********************************************************************************************************************/
+
+.menu {
+    margin-bottom: 50px;
+}
+.menu .title {
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menu > ul > li {
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #333333;
+}
+.menu > ul > li:last-child {
+    border-bottom :none;
+}
+.menu .sub-title {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.menu .sub-title:hover {
+    color: #842a2a;
+}
+.menu > ul > li ul {
+    display: none;
+}
+.menu > ul > li > ul li {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.menu > ul > li > ul li:last-child {
+    margin-bottom: 15px;
+}
+.menu > ul > li > ul li a {
+    font-size: 1em;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+.menu > ul > li > ul li a:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background: #333333;
+    position: absolute;
+    top: 0.5em;
+    left: -15px;
+}
+
+@media (max-width: 768px) {
+    .menu .title {
+        margin-bottom: 5px;
+    }
+    .menu > ul > li {
+        padding-top: 5px;
+    }
+    .menu .sub-title {
+        margin-bottom: 5px;
+    }
+}
+
+/**********************************************************************************************************************
+********** menu-chbx
+***********************************************************************************************************************/
+
+.menu-chbx {
+    margin-bottom: 50px;
+}
+.menu-chbx .title {
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.form-menu-chbx {
+    display: block;
+    width: 100%;
+}
+.form-menu-chbx .sub-title {
+    display: inline-block;
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.form-menu-chbx .sub-title i {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+.form-menu-chbx fieldset {
+    display: block;
+    width: 100%;
+    border: none;
+}
+.form-menu-chbx fieldset .fields {
+    display: none;
+    padding-bottom: 20px;
+}
+.form-menu-chbx input[type='checkbox'] {
+    display: none;
+}
+.form-menu-chbx label {
+    display: block;
+    list-style: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+.form-menu-chbx label i {
+    font-size: 1.1em;
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+}
+.form-menu-chbx label .fa-check-square-o {
+    display: none;
+}
+input[type='checkbox']:checked + label .fa-square-o {
+    display: none;
+}
+input[type='checkbox']:checked + label .fa-check-square-o {
+    display: block;
+}
+.form-menu-chbx label span {
+    font-size: 0.8em;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+    opacity: 0.7;
+}
+
+.form-menu-chbx .show-more {
+    cursor: pointer;
+}
+.form-menu-chbx .show-more span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.form-menu-chbx .show-more i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding-left: 2px;
+}
+.form-menu-chbx .show-more .enabled {
+    display: none;
+}
+.form-menu-chbx .show-more.active .enabled {
+    display: inline-block;
+}
+.form-menu-chbx .show-more.active .disabled {
+    display: none;
+}
+.form-menu-chbx .show-more:hover span, .form-menu-chbx label:hover {
+    color: #842a2a;
+}
+.form-menu-chbx .unpopular {
+    display: none;
 }
