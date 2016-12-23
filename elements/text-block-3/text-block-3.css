@@ -1,0 +1,26 @@
+.text-block-3 .texts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.text-block-3 .text-card {
+    width: 32%;
+    margin: 10px 0;
+}
+.text-block-3 h3 a {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+.text-block-3 h3 a:hover {
+    color: #888888;
+}
+.text-block-3 p {
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+
+.content-block.left-sidebar.right-sidebar .text-block-3 .text-card {
+    width: 100%;
+}

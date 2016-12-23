@@ -41,28 +41,21 @@ header[role='banner'] {
 .content-block {
     position: relative;
 }
-main {
-    display: block;
-    width: 100%;
+.content-block.left-sidebar  {
+    margin-left: 23%;
 }
-main.left-sidebar  {
-    padding-left: 23%;
-}
-main.right-sidebar  {
-    padding-right: 23%;
+.content-block.right-sidebar  {
+    margin-right: 23%;
 }
 aside {
     display: block;
     width: 21%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
 }
 .sidebar-before {
-    left: 0;
+    float: left;
 }
 .sidebar-after {
-    right: 0;
+    float: right;
 }
 
 section {
@@ -113,6 +106,11 @@ h2 {
 h3 {
     font-family: 'Century Gothic Bold', sans-serif;
     font-size: 1.5em;
+}
+h4 {
+    font-family: 'Century Gothic Bold', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.2;
 }
 
 a, button {
@@ -240,9 +238,9 @@ input:focus:-ms-input-placeholder {color: transparent;}
         display: block;
         padding: 10px 1%;
     }
-    main.left-sidebar, main.right-sidebar  {
-        padding-left: 0;
-        padding-right: 0;
+    .content-block.left-sidebar, .content-block.right-sidebar  {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -960,4 +958,204 @@ input[type='checkbox']:checked + label .fa-check-square-o {
 }
 .form-menu-chbx .unpopular {
     display: none;
+}
+
+/**********************************************************************************************************************
+********** text-block-1
+***********************************************************************************************************************/
+
+.text-block-1 .texts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.text-block-1 .text-card {
+    display: flex;
+    width: 48%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.text-block-1 .text-card .image-wrap {
+    width: 20%;
+    padding-top: 20%;
+}
+.text-block-1 .text-card .text-info {
+    width: 75%;
+}
+.text-block-1 .text-card .text {
+    margin-bottom: 10px;
+}
+.text-block-1 .text-card .text p {
+    margin-bottom: 10px;
+    font-family: 'Calibri Italic', sans-serif;
+    color: #888888;
+}
+.text-block-1 .text-card .tag {
+    text-decoration: none;
+}
+.text-block-1 .text-card .tag i {
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+.text-block-1 .text-card .tag span {
+    font-family: 'Century Gothic Bold', sans-serif;
+    text-transform: lowercase;
+    font-size: 1.2em;
+    color: inherit;
+}
+.text-block-1 .text-card .tag:hover {
+    color: #888888;
+}
+
+.content-block.left-sidebar.right-sidebar .text-block-1 .text-card {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .text-block-1 .text-card {
+        margin: 20px 0;
+    }
+    .text-block-1 .text-card .text-info {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/**********************************************************************************************************************
+********** text-block-2
+***********************************************************************************************************************/
+
+.text-block-2 .text-card {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+.text-block-2 .text {
+    width: 65%;
+}
+.text-block-2 blockquote {
+    display: block;
+    width: 30%;
+    padding: 3%;
+    background: #e5eef5;
+    border-radius: 10px;
+}
+.text-block-2 h3 {
+    color: #0664a1;
+    margin-bottom: 15px;
+}
+.text-block-2 h4 {
+    margin-bottom: 25px;
+}
+.text-block-2 p {
+    margin: 20px 0;
+}
+
+.content-block.left-sidebar.right-sidebar .text-block-2 .text,
+.content-block.left-sidebar.right-sidebar .text-block-2 blockquote {
+    width: 100%;
+}
+
+/**********************************************************************************************************************
+********** text-block-3
+***********************************************************************************************************************/
+
+.text-block-3 .texts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.text-block-3 .text-card {
+    width: 32%;
+    margin: 10px 0;
+}
+.text-block-3 h3 a {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+.text-block-3 h3 a:hover {
+    color: #888888;
+}
+.text-block-3 p {
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+
+.content-block.left-sidebar.right-sidebar .text-block-3 .text-card {
+    width: 100%;
+}
+
+/**********************************************************************************************************************
+********** text-block-4
+***********************************************************************************************************************/
+
+.text-block-4 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.text-block-4 h2 {
+    display: block;
+    width: 100%;
+}
+.text-block-4 .texts-list {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.text-block-4 blockquote {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.text-block-4 blockquote p {
+    color: #888888;
+    font-family: 'Calibri Italic', sans-serif;
+    font-size: 1.1em;
+}
+.text-block-4 .text-card {
+    width: 48%;
+    margin: 20px 0;
+}
+.text-block-4 .text-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #888888;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.text-block-4 .image-wrap {
+    width: 80px;
+    height: 80px;
+}
+.text-block-4 h3 {
+    display: block;
+    width: calc(100% - 100px);
+    line-height: 1;
+}
+
+.content-block.left-sidebar.right-sidebar .text-block-4 .texts-list,
+.content-block.left-sidebar.right-sidebar .text-block-4 blockquote {
+    width: 100%;
+    margin: 10px 0;
+}
+.content-width-small .content-block.left-sidebar.right-sidebar .text-block-4 .text-card {
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+    .text-block-4 .text-card {
+        width: 100%;
+    }
 }
