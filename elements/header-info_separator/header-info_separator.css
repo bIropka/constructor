@@ -1,4 +1,4 @@
-.header-info_separator {
+.separator {
     display: inline-block;
     vertical-align: middle;
     width: 0;
@@ -7,7 +7,7 @@
     margin: 10px 0 -10px;
 }
 @media (max-width: 979px) {
-    .header-info_separator {
+    .separator {
         display: none;
     }
 }

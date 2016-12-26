@@ -40,11 +40,11 @@
 
             <div class="header-info">
 
-                <a href="index.html" class="header-info_logo">
+                <a href="index.html" class="header-logo">
                     <img src="../images/logo.png" alt="logo">
                 </a>
 
-                <form action="#" class="header-info_form-search">
+                <form action="#" class="form-search">
 
                     <label>
                         <input type="text" placeholder="поиск">
@@ -56,17 +56,17 @@
 
                 </form>
 
-                <div class="header-info_address">
+                <div class="address">
                     <div class="city-name">Санкт-Петербург</div>
                     <p>Вознесенский пр., д 17, лит. Б</p>
                     <p>Время работы: Пн - Сб 9:00 - 18:00</p>
                 </div>
 
-                <div class="header-info_separator"></div>
+                <div class="separator"></div>
 
-                <div class="header-info_callback">
+                <div class="callback">
                     <a href="tel:+74957300000">+7 (495) 730-00-00</a>
-                    <button>обратный звонок</button>
+                    <button class="button-form">обратный звонок</button>
                 </div>
 
             </div>
@@ -81,7 +81,7 @@
 
             <div class="menu">
 
-                <div class="title">Название меню</div>
+                <div class="title">Название меню <i class="fa fa-arrow-down"></i></div>
 
                 <ul>
 
@@ -169,900 +169,765 @@
 
         </aside>
 
-        <aside class="sidebar-after">
 
-            <div class="menu-chbx">
 
-                <div class="title">Фильтры</div>
+        <div class="content-block">
 
-                <form action="#" class="form-menu-chbx">
+                <div class="banner">
 
-                    <fieldset>
-
-                        <div class="sub-title">Цена<i class="fa fa-chevron-down"></i></div>
-
-                        <div class="fields">
-
-                            <input type="checkbox" id="checkbox-1-1" name="checkbox-1">
-                            <label for="checkbox-1-1"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-1-2" name="checkbox-1">
-                            <label for="checkbox-1-2"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-1-3" name="checkbox-1">
-                            <label for="checkbox-1-3"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с длинным названием<span>9</span></label>
-
-                            <div class="unpopular">
-
-                                <input type="checkbox" id="checkbox-1-4" name="checkbox-1">
-                                <label for="checkbox-1-4"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с неприлично длинным названием<span>9</span></label>
-
-                                <input type="checkbox" id="checkbox-1-5" name="checkbox-1">
-                                <label for="checkbox-1-5"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            </div>
-
-                            <div class="show-more"><i class="fa fa-chevron-right"></i><span class="disabled">Еще</span><span class="enabled">Популярные</span></div>
-
-                        </div>
-
-                    </fieldset>
-
-                    <fieldset>
-
-                        <div class="sub-title">Емкость<i class="fa fa-chevron-down"></i></div>
-
-                        <div class="fields">
-
-                            <input type="checkbox" id="checkbox-2-1" name="checkbox-1">
-                            <label for="checkbox-2-1"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-2-2" name="checkbox-1">
-                            <label for="checkbox-2-2"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-2-3" name="checkbox-1">
-                            <label for="checkbox-2-3"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с длинным названием<span>9</span></label>
-
-                            <div class="unpopular">
-
-                                <input type="checkbox" id="checkbox-2-4" name="checkbox-1">
-                                <label for="checkbox-2-4"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с неприлично длинным названием<span>9</span></label>
-
-                                <input type="checkbox" id="checkbox-2-5" name="checkbox-1">
-                                <label for="checkbox-2-5"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            </div>
-
-                            <div class="show-more"><i class="fa fa-chevron-right"></i><span class="disabled">Еще</span><span class="enabled">Популярные</span></div>
-
-                        </div>
-
-                    </fieldset>
-
-                    <fieldset>
-
-                        <div class="sub-title">Цвет<i class="fa fa-chevron-down"></i></div>
-
-                        <div class="fields">
-
-                            <input type="checkbox" id="checkbox-3-1" name="checkbox-1">
-                            <label for="checkbox-3-1"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-3-2" name="checkbox-1">
-                            <label for="checkbox-3-2"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-3-3" name="checkbox-1">
-                            <label for="checkbox-3-3"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с длинным названием<span>9</span></label>
-
-                            <div class="unpopular">
-
-                                <input type="checkbox" id="checkbox-3-4" name="checkbox-1">
-                                <label for="checkbox-3-4"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с неприлично длинным названием<span>9</span></label>
-
-                                <input type="checkbox" id="checkbox-3-5" name="checkbox-1">
-                                <label for="checkbox-3-5"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            </div>
-
-                            <div class="show-more"><i class="fa fa-chevron-right"></i><span class="disabled">Еще</span><span class="enabled">Популярные</span></div>
-
-                        </div>
-
-                    </fieldset>
-
-                    <fieldset>
-
-                        <div class="sub-title">Размер<i class="fa fa-chevron-down"></i></div>
-
-                        <div class="fields">
-
-                            <input type="checkbox" id="checkbox-4-1" name="checkbox-1">
-                            <label for="checkbox-4-1"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-4-2" name="checkbox-1">
-                            <label for="checkbox-4-2"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант<span>9</span></label>
-
-                            <input type="checkbox" id="checkbox-4-3" name="checkbox-1">
-                            <label for="checkbox-4-3"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с длинным названием<span>9</span></label>
-
-                            <div class="unpopular">
-
-                                <input type="checkbox" id="checkbox-4-4" name="checkbox-1">
-                                <label for="checkbox-4-4"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора с неприлично длинным названием<span>9</span></label>
-
-                                <input type="checkbox" id="checkbox-4-5" name="checkbox-1">
-                                <label for="checkbox-4-5"><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>Вариант выбора<span>9</span></label>
-
-                            </div>
-
-                            <div class="show-more"><i class="fa fa-chevron-right"></i><span class="disabled">Еще</span><span class="enabled">Популярные</span></div>
-
-                        </div>
-
-                    </fieldset>
-
-                </form>
-
-            </div>
-
-        </aside>
-
-        <div class="content-block left-sidebar right-sidebar">
-            <div class="banner">
-
-                <img src="../images/banner.jpg" alt="banner">
-
-            </div>
-
-            <section class="products-1">
-
-                <h2>Наши товары</h2>
-
-                <div class="product-list">
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/alcohol-1.png" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">арманьяк</a></h3>
-
-                            <div class="product-text">
-                                Географическое положение местности Арманьяк
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/alcohol-2.png" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">арманьяк</a></h3>
-
-                            <div class="product-text">
-                                Географическое положение местности Арманьяк, расположенной между Средиземным морем и Атлантическим океаном, затрудняло доступ к морскому побережью Средиземным морем и Атлантическим океаном, затрудняло доступ к морскому побережью.
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/alcohol-3.png" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">арманьяк с неприлично длинным названием</a></h3>
-
-                            <div class="product-text">
-                                Географическое положение местности Арманьяк, расположенной между Средиземным морем
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/alcohol-1.png" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">арманьяк</a></h3>
-
-                            <div class="product-text">
-                                Географическое положение местности Арманьяк, расположенной между Средиземным морем и Атлантическим океаном, затрудняло доступ к морскому побережью.
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/alcohol-2.png" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">арманьяк</a></h3>
-
-                            <div class="product-text">
-                                Географическое положение местности Арманьяк
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/alcohol-3.png" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">арманьяк</a></h3>
-
-                            <div class="product-text">
-                                Географическое положение местности Арманьяк, расположенной между Средиземным морем и Атлантическим океаном, затрудняло
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <img src="../images/banner.jpg" alt="banner">
 
                 </div>
 
-                <a href="#" class="button button-round">смотреть все</a>
+                <section class="products products-1">
 
-            </section>
+                    <h2>Наши товары</h2>
 
-            <section class="products-2">
+                    <div class="product-list">
 
-                <h2>Наши товары</h2>
+                        <div class="product-card">
 
-                <div class="product-list">
+                            <a href="#" class="image-wrap">
+                                <img src="../images/alcohol-1.png" alt="image">
+                            </a>
 
-                    <div class="product-card">
+                            <div class="product-info">
 
-                        <a href="#" class="image-wrap">
-                            <img src="../images/house.jpg" alt="image">
-                        </a>
+                                <h3><a href="#">арманьяк</a></h3>
 
-                        <div class="product-info">
+                                <div class="product-text">
+                                    Географическое положение местности Арманьяк
+                                </div>
 
-                            <h3><a href="#">металлочерепица</a></h3>
+                            </div>
 
-                            <div class="product-text">
-                                Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/alcohol-2.png" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">арманьяк</a></h3>
+
+                                <div class="product-text">
+                                    Географическое положение местности Арманьяк, расположенной между Средиземным морем и Атлантическим океаном, затрудняло доступ к морскому побережью Средиземным морем и Атлантическим океаном, затрудняло доступ к морскому побережью.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/alcohol-3.png" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">арманьяк с неприлично длинным названием</a></h3>
+
+                                <div class="product-text">
+                                    Географическое положение местности Арманьяк, расположенной между Средиземным морем
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/alcohol-1.png" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">арманьяк</a></h3>
+
+                                <div class="product-text">
+                                    Географическое положение местности Арманьяк, расположенной между Средиземным морем и Атлантическим океаном, затрудняло доступ к морскому побережью.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/alcohol-2.png" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">арманьяк</a></h3>
+
+                                <div class="product-text">
+                                    Географическое положение местности Арманьяк
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/alcohol-3.png" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">арманьяк</a></h3>
+
+                                <div class="product-text">
+                                    Географическое положение местности Арманьяк, расположенной между Средиземным морем и Атлантическим океаном, затрудняло
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="product-card">
+                    <a href="#" class="button button-round">смотреть все</a>
 
-                        <a href="#" class="image-wrap">
-                            <img src="../images/alcohol-3.png" alt="image">
-                        </a>
+                </section>
 
-                        <div class="product-info">
+                <section class="products products-2">
 
-                            <h3><a href="#">керамическая черепица</a></h3>
+                    <h2>Наши товары</h2>
 
-                            <div class="product-text">
-                                Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы  и гибкой системой скидок на монтажные работы
+                    <div class="product-list">
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/house.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/alcohol-3.png" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">керамическая черепица</a></h3>
+
+                                <div class="product-text">
+                                    Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы  и гибкой системой скидок на монтажные работы
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/house.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">керамическая черепица</a></h3>
+
+                                <div class="product-text">
+                                    Кровельная металлочерепица для монтажа
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/house.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/house.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/house.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="product-card">
+                    <a href="#" class="button button-round">смотреть все</a>
 
-                        <a href="#" class="image-wrap">
-                            <img src="../images/house.jpg" alt="image">
-                        </a>
+                </section>
 
-                        <div class="product-info">
+                <section class="products products-3">
 
-                            <h3><a href="#">керамическая черепица</a></h3>
+                    <h2>Наши товары</h2>
 
-                            <div class="product-text">
-                                Кровельная металлочерепица для монтажа
+                    <div class="product-list">
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/fence.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">кованые заборы</a></h3>
+
+                                <div class="product-text">
+                                    Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре города по низкой стоимости с доставкой и установкой недорого купить в Москве и Санкт-Петербурге. Монтажные работы осуществляются сразу после изготовления продукции на территории завода..
+                                </div>
+
+                                <a href="#" class="button button-square">подробнее</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/fence.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">кованые заборы</a></h3>
+
+                                <div class="product-text">
+                                    Металлические заборы из высокопрочной стали для монтажа на загородных участках
+                                </div>
+
+                                <a href="#" class="button button-square">подробнее</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/fence.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">кованые заборы</a></h3>
+
+                                <div class="product-text">
+                                    Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре города по низкой стоимости с доставкой и установкой недорого купить в Москве и Санкт-Петербурге..
+                                </div>
+
+                                <a href="#" class="button button-square">подробнее</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/fence.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">кованые заборы</a></h3>
+
+                                <div class="product-text">
+                                    Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре города
+                                </div>
+
+                                <a href="#" class="button button-square">подробнее</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/fence.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">кованые заборы</a></h3>
+
+                                <div class="product-text">
+                                    Металлические заборы из высокопрочной стали для монтажа на  и Санкт-Петербурге. Монтажные работы осуществляются сразу после изготовления продукции на территории завода..
+                                </div>
+
+                                <a href="#" class="button button-square">подробнее</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/fence.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">кованые заборы</a></h3>
+
+                                <div class="product-text">
+                                    Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре из высокопрочной стали для монтажа на загородных участках или в историческом центре города по низкой стоимости с доставкой и установкой недорого купить в Москве и Санкт-Петербурге. Монтажные работы осуществляются сразу после изготовления продукции на территории завода..
+                                </div>
+
+                                <a href="#" class="button button-square">подробнее</a>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="product-card">
+                    <a href="#" class="button button-round">смотреть все</a>
 
-                        <a href="#" class="image-wrap">
-                            <img src="../images/house.jpg" alt="image">
-                        </a>
+                </section>
 
-                        <div class="product-info">
+                <section class="products products-4">
 
-                            <h3><a href="#">металлочерепица</a></h3>
+                    <h2>Наши товары</h2>
 
-                            <div class="product-text">
-                                Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы
+                    <div class="product-list">
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">натуральная черепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">натуральная черепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">натуральная черепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">металлочерепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <a href="#" class="image-wrap">
+                                <img src="../images/tile.jpg" alt="image">
+                            </a>
+
+                            <div class="product-info">
+
+                                <h3><a href="#">натуральная черепица</a></h3>
+
+                                <div class="product-text">
+                                    от 375 руб. / м2
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="product-card">
+                    <a href="#" class="button button-round">смотреть все</a>
 
-                        <a href="#" class="image-wrap">
-                            <img src="../images/house.jpg" alt="image">
-                        </a>
+                </section>
 
-                        <div class="product-info">
+                <section class="text-block-1">
 
-                            <h3><a href="#">металлочерепица</a></h3>
+                    <h2>Тексты 1</h2>
 
-                            <div class="product-text">
-                                Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы для монтажа на крышу по низкой стоимости и гибкой системой скидок на монтажные работы
+                    <div class="texts-list">
+
+                        <div class="text-card">
+
+                            <div class="image-wrap">
+                                <img src="../images/fence.jpg" alt="img">
+                            </div>
+
+                            <div class="text-info">
+
+                                <div class="text">
+                                    <p>
+                                        В настоящее время кровельную медь заводы поставляют как правило в рулонах (рулонная медь), а далее кровельщики нарезают нужной длины медные ленты. Особой популярностью пользуется кровельная медь, толщина которой  0,6 мм и 0,8 мм, а ширина 600 мм и 670 мм. Такие размеры позволяют выполнить кровлю любой сложности. И у нас всегда можно данного типоразмера кровельную медь купить.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="tag"><i class="fa fa-home"></i><span>кровельная медь</span></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="text-card">
+
+                            <div class="image-wrap">
+                                <img src="../images/fence.jpg" alt="img">
+                            </div>
+
+                            <div class="text-info">
+
+                                <div class="text">
+                                    <p>
+                                        В настоящее время кровельную медь заводы поставляют как правило в рулонах (рулонная медь), толщина которой  0,6 мм и 0,8 мм, а ширина 600 мм и 670 мм. Такие размеры позволяют выполнить кровлю любой сложности. И у нас всегда можно данного типоразмера кровельную медь купить.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="tag"><i class="fa fa-home"></i><span>кровельная медь</span></a>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="product-card">
+                </section>
 
-                        <a href="#" class="image-wrap">
-                            <img src="../images/house.jpg" alt="image">
-                        </a>
+                <section class="text-block-2">
 
-                        <div class="product-info">
-
-                            <h3><a href="#">металлочерепица</a></h3>
-
-                            <div class="product-text">
-                                Кровельная металлочерепица для монтажа на крышу по низкой стоимости и гибкой системой
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <a href="#" class="button button-round">смотреть все</a>
-
-            </section>
-
-            <section class="products-3">
-
-                <h2>Наши товары</h2>
-
-                <div class="product-list">
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/fence.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">кованые заборы</a></h3>
-
-                            <div class="product-text">
-                                Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре города по низкой стоимости с доставкой и установкой недорого купить в Москве и Санкт-Петербурге. Монтажные работы осуществляются сразу после изготовления продукции на территории завода..
-                            </div>
-
-                            <a href="#" class="button button-square">подробнее</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/fence.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">кованые заборы</a></h3>
-
-                            <div class="product-text">
-                                Металлические заборы из высокопрочной стали для монтажа на загородных участках
-                            </div>
-
-                            <a href="#" class="button button-square">подробнее</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/fence.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">кованые заборы</a></h3>
-
-                            <div class="product-text">
-                                Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре города по низкой стоимости с доставкой и установкой недорого купить в Москве и Санкт-Петербурге..
-                            </div>
-
-                            <a href="#" class="button button-square">подробнее</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/fence.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">кованые заборы</a></h3>
-
-                            <div class="product-text">
-                                Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре города
-                            </div>
-
-                            <a href="#" class="button button-square">подробнее</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/fence.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">кованые заборы</a></h3>
-
-                            <div class="product-text">
-                                Металлические заборы из высокопрочной стали для монтажа на  и Санкт-Петербурге. Монтажные работы осуществляются сразу после изготовления продукции на территории завода..
-                            </div>
-
-                            <a href="#" class="button button-square">подробнее</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/fence.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">кованые заборы</a></h3>
-
-                            <div class="product-text">
-                                Металлические заборы из высокопрочной стали для монтажа на загородных участках или в историческом центре из высокопрочной стали для монтажа на загородных участках или в историческом центре города по низкой стоимости с доставкой и установкой недорого купить в Москве и Санкт-Петербурге. Монтажные работы осуществляются сразу после изготовления продукции на территории завода..
-                            </div>
-
-                            <a href="#" class="button button-square">подробнее</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <a href="#" class="button button-round">смотреть все</a>
-
-            </section>
-
-            <section class="products-4">
-
-                <h2>Наши товары</h2>
-
-                <div class="product-list">
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">металлочерепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">натуральная черепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">металлочерепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">натуральная черепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">металлочерепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">натуральная черепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">металлочерепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <a href="#" class="image-wrap">
-                            <img src="../images/tile.jpg" alt="image">
-                        </a>
-
-                        <div class="product-info">
-
-                            <h3><a href="#">натуральная черепица</a></h3>
-
-                            <div class="product-text">
-                                от 375 руб. / м2
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <a href="#" class="button button-round">смотреть все</a>
-
-            </section>
-
-            <section class="text-block-1">
-
-                <h2>Тексты 1</h2>
-
-                <div class="texts-list">
+                    <h2>Тексты 2</h2>
 
                     <div class="text-card">
 
-                        <div class="image-wrap">
-                            <img src="../images/fence.jpg" alt="img">
+                        <div class="text">
+
+                            <h3>Преимущества Нашей Организации</h3>
+
+                            <h4>Конкурентные преимущества – это такие показатели организации, которые ставят ее на ранг выше своих конкурентов. Эти показатели включают в себя цену, выгоды от покупки товара, издержки.</h4>
+
+                            <p>
+                                Изучение конкурентных преимуществ имеет большое значение для управления предприятием, так как развитие организации неизбежно связано конкуренцией и противостоянием на рынке другим производителям и поставщикам аналогичной продукции. Конкурентные преимущества должны обеспечивать уникальность торговой марки и удовлетворять специфические потребности клиента.
+                            </p>
+
+                            <p>
+                                Следовательно, тема моей курсовой работы является актуальной и важной. Так как завоевание и сохранение конкурентных преимуществ являются, как известно, ключевой функцией управления предприятием. Особенно важно добиться преимуществ на насыщенных рынках, где спрос удовлетворяется многими поставщиками.
+                            </p>
+
                         </div>
 
-                        <div class="text-info">
+                        <blockquote>
 
-                            <div class="text">
-                                <p>
-                                    В настоящее время кровельную медь заводы поставляют как правило в рулонах (рулонная медь), а далее кровельщики нарезают нужной длины медные ленты. Особой популярностью пользуется кровельная медь, толщина которой  0,6 мм и 0,8 мм, а ширина 600 мм и 670 мм. Такие размеры позволяют выполнить кровлю любой сложности. И у нас всегда можно данного типоразмера кровельную медь купить.
-                                </p>
-                            </div>
+                            <h3>Высокое Качество</h3>
 
-                            <a href="#" class="tag"><i class="fa fa-home"></i><span>кровельная медь</span></a>
+                            <p>
+                                Оценка качества труда — это сравнительная оценка, которая представляет собой сопоставление характеристик живого труда, взятого за эталон.
+                            </p>
+
+                            <p>
+                                Сравнительная оценка способствует развитию как профессиональных, так и личностных качеств работника, которые необходимы конкретному работнику для эффективного труда на данном рабочем месте, но и желательны для достижения трудовых целей коллектива.
+                            </p>
+
+                        </blockquote>
+
+                    </div>
+
+                </section>
+
+                <section class="text-block-3">
+
+                    <h2>Тексты 3</h2>
+
+                    <div class="texts-list">
+
+                        <div class="text-card">
+
+                            <h3><a href="#">Производство Металлоконструкций</a></h3>
+
+                            <p>
+                                Производство металлических конструкций завершается покраской деталей. Самым передовым методом на сегодня является порошковый. Перед покраской изделие обезжиривается и очищается. Затем пульвелизатором наносится плотно
+                            </p>
+
+                        </div>
+
+                        <div class="text-card">
+
+                            <h3><a href="#">Электромонтажные Работы</a></h3>
+
+                            <p>
+                                Производство металлических конструкций завершается покраской деталей. Самым передовым методом на сегодня является порошковый. Перед покраской изделие обезжиривается и очищается. Затем пульвелизатором наносится плотно прилегающий порошок. После этого детали нагревают в камере, и под воздействием температуры покрытие надежно затвердевает.
+                            </p>
+
+                        </div>
+
+                        <div class="text-card">
+
+                            <h3><a href="#">Производство Металлоконструкций</a></h3>
+
+                            <p>
+                                Производство металлических конструкций завершается покраской деталей. Самым передовым методом на сегодня является порошковый. Перед покраской изделие обезжиривается и очищается. Затем пульвелизатором наносится плотно прилегающий порошок. После этого детали нагревают в камере, и под воздействием температуры покрытие надежно затвердевает. Такой способ отличается долговечностью, экономичностью,
+                            </p>
 
                         </div>
 
                     </div>
 
-                    <div class="text-card">
+                </section>
 
-                        <div class="image-wrap">
-                            <img src="../images/fence.jpg" alt="img">
-                        </div>
+                <section class="text-block-4">
 
-                        <div class="text-info">
+                    <h2>Тексты 4</h2>
 
-                            <div class="text">
-                                <p>
-                                    В настоящее время кровельную медь заводы поставляют как правило в рулонах (рулонная медь), толщина которой  0,6 мм и 0,8 мм, а ширина 600 мм и 670 мм. Такие размеры позволяют выполнить кровлю любой сложности. И у нас всегда можно данного типоразмера кровельную медь купить.
-                                </p>
+                    <div class="texts-list">
+
+                        <div class="text-card">
+
+                            <div class="text-info">
+
+                                <div class="image-wrap">
+                                    <img src="../images/icon-text.jpg" alt="img">
+                                </div>
+
+                                <h3>Наши клиенты чувствуют себя особенными</h3>
+
                             </div>
 
-                            <a href="#" class="tag"><i class="fa fa-home"></i><span>кровельная медь</span></a>
+                            <p>
+                                Наши клиенты особенные люди и компании, которые получают эксклюзивные привилегии и постоянную поддержку со стороны профессионалов.
+                            </p>
 
                         </div>
 
-                    </div>
+                        <div class="text-card">
 
-                </div>
+                            <div class="text-info">
 
-            </section>
+                                <div class="image-wrap">
+                                    <img src="../images/icon-text.jpg" alt="img">
+                                </div>
 
-            <section class="text-block-2">
+                                <h3>Наши клиенты чувствуют себя особенными</h3>
 
-                <h2>Тексты 2</h2>
+                            </div>
 
-                <div class="text-card">
+                            <p>
+                                Наши клиенты особенные люди и компании, которые получают эксклюзивные привилегии
+                            </p>
 
-                    <div class="text">
+                        </div>
 
-                        <h3>Преимущества Нашей Организации</h3>
+                        <div class="text-card">
 
-                        <h4>Конкурентные преимущества – это такие показатели организации, которые ставят ее на ранг выше своих конкурентов. Эти показатели включают в себя цену, выгоды от покупки товара, издержки.</h4>
+                            <div class="text-info">
 
-                        <p>
-                            Изучение конкурентных преимуществ имеет большое значение для управления предприятием, так как развитие организации неизбежно связано конкуренцией и противостоянием на рынке другим производителям и поставщикам аналогичной продукции. Конкурентные преимущества должны обеспечивать уникальность торговой марки и удовлетворять специфические потребности клиента.
-                        </p>
+                                <div class="image-wrap">
+                                    <img src="../images/icon-text.jpg" alt="img">
+                                </div>
 
-                        <p>
-                            Следовательно, тема моей курсовой работы является актуальной и важной. Так как завоевание и сохранение конкурентных преимуществ являются, как известно, ключевой функцией управления предприятием. Особенно важно добиться преимуществ на насыщенных рынках, где спрос удовлетворяется многими поставщиками.
-                        </p>
+                                <h3>Наши клиенты чувствуют себя особенными</h3>
+
+                            </div>
+
+                            <p>
+                                Наши клиенты особенные люди и компании, которые получают эксклюзивные привилегии и постоянную поддержку со стороны профессионалов.
+                            </p>
+
+                        </div>
+
+                        <div class="text-card">
+
+                            <div class="text-info">
+
+                                <div class="image-wrap">
+                                    <img src="../images/icon-text.jpg" alt="img">
+                                </div>
+
+                                <h3>Наши клиенты чувствуют себя особенными</h3>
+
+                            </div>
+
+                            <p>
+                                Наши клиенты особенные люди и компании
+                            </p>
+
+                        </div>
 
                     </div>
 
                     <blockquote>
 
-                        <h3>Высокое Качество</h3>
-
                         <p>
-                            Оценка качества труда — это сравнительная оценка, которая представляет собой сопоставление характеристик живого труда, взятого за эталон.
-                        </p>
-
-                        <p>
-                            Сравнительная оценка способствует развитию как профессиональных, так и личностных качеств работника, которые необходимы конкретному работнику для эффективного труда на данном рабочем месте, но и желательны для достижения трудовых целей коллектива.
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
                         </p>
 
                     </blockquote>
 
-                </div>
+                </section>
 
-            </section>
-
-            <section class="text-block-3">
-
-                <h2>Тексты 3</h2>
-
-                <div class="texts-list">
-
-                    <div class="text-card">
-
-                        <h3><a href="#">Производство Металлоконструкций</a></h3>
-
-                        <p>
-                            Производство металлических конструкций завершается покраской деталей. Самым передовым методом на сегодня является порошковый. Перед покраской изделие обезжиривается и очищается. Затем пульвелизатором наносится плотно
-                        </p>
-
-                    </div>
-
-                    <div class="text-card">
-
-                        <h3><a href="#">Электромонтажные Работы</a></h3>
-
-                        <p>
-                            Производство металлических конструкций завершается покраской деталей. Самым передовым методом на сегодня является порошковый. Перед покраской изделие обезжиривается и очищается. Затем пульвелизатором наносится плотно прилегающий порошок. После этого детали нагревают в камере, и под воздействием температуры покрытие надежно затвердевает.
-                        </p>
-
-                    </div>
-
-                    <div class="text-card">
-
-                        <h3><a href="#">Производство Металлоконструкций</a></h3>
-
-                        <p>
-                            Производство металлических конструкций завершается покраской деталей. Самым передовым методом на сегодня является порошковый. Перед покраской изделие обезжиривается и очищается. Затем пульвелизатором наносится плотно прилегающий порошок. После этого детали нагревают в камере, и под воздействием температуры покрытие надежно затвердевает. Такой способ отличается долговечностью, экономичностью,
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section class="text-block-4">
-
-                <h2>Тексты 4</h2>
-
-                <div class="texts-list">
-
-                    <div class="text-card">
-
-                        <div class="text-info">
-
-                            <div class="image-wrap">
-                                <img src="../images/icon-text.jpg" alt="img">
-                            </div>
-
-                            <h3>Наши клиенты чувствуют себя особенными</h3>
-
-                        </div>
-
-                        <p>
-                            Наши клиенты особенные люди и компании, которые получают эксклюзивные привилегии и постоянную поддержку со стороны профессионалов.
-                        </p>
-
-                    </div>
-
-                    <div class="text-card">
-
-                        <div class="text-info">
-
-                            <div class="image-wrap">
-                                <img src="../images/icon-text.jpg" alt="img">
-                            </div>
-
-                            <h3>Наши клиенты чувствуют себя особенными</h3>
-
-                        </div>
-
-                        <p>
-                            Наши клиенты особенные люди и компании, которые получают эксклюзивные привилегии
-                        </p>
-
-                    </div>
-
-                    <div class="text-card">
-
-                        <div class="text-info">
-
-                            <div class="image-wrap">
-                                <img src="../images/icon-text.jpg" alt="img">
-                            </div>
-
-                            <h3>Наши клиенты чувствуют себя особенными</h3>
-
-                        </div>
-
-                        <p>
-                            Наши клиенты особенные люди и компании, которые получают эксклюзивные привилегии и постоянную поддержку со стороны профессионалов.
-                        </p>
-
-                    </div>
-
-                    <div class="text-card">
-
-                        <div class="text-info">
-
-                            <div class="image-wrap">
-                                <img src="../images/icon-text.jpg" alt="img">
-                            </div>
-
-                            <h3>Наши клиенты чувствуют себя особенными</h3>
-
-                        </div>
-
-                        <p>
-                            Наши клиенты особенные люди и компании
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <blockquote>
-
-                    <p>
-                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                    </p>
-
-                </blockquote>
-
-            </section>
-
-        </div>
+            </div>
 
     </div>
 
@@ -1072,9 +937,9 @@
 
             <div class="footer-element">
 
-                <div class="footer_title">о компании</div>
+                <div class="footer-title">о компании</div>
 
-                <a href="index.html" class="footer_logo">
+                <a href="index.html" class="footer-logo">
                     <img src="../images/logo.png" alt="logo">
                 </a>
 
@@ -1086,7 +951,7 @@
 
             <div class="footer-element">
 
-                <div class="footer_title">дополнительная информация</div>
+                <div class="footer-title">дополнительная информация</div>
 
                 <ul>
                     <li>скидки и акции</li>
@@ -1100,18 +965,18 @@
 
             <div class="footer-element">
 
-                <div class="footer_title">контактная информация</div>
+                <div class="footer-title">контактная информация</div>
 
                 <p>г. Санкт-Петербург</p>
 
                 <p>Вознесенский пр., д 17, лит. Б</p>
 
-                <div class="footer_icon"><img src="../images/icon-phone.png" alt="icon"></div>
+                <div class="footer-icon"><img src="../images/icon-phone.png" alt="icon"></div>
                 <a href="tel:+74957300000">+7 (495) 730-00-00</a>
 
                 <p>Время работы: Пн - Сб 9:00 - 18:00</p>
 
-                <div class="footer_icon"><img src="../images/icon-email.png" alt="icon"></div>
+                <div class="footer-icon"><img src="../images/icon-email.png" alt="icon"></div>
                 <a href="mailto:company@grandline.com">company@grandline.com</a>
 
             </div>

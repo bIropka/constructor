@@ -1,4 +1,4 @@
-.header-info_address {
+.address {
     display: inline-block;
     vertical-align: middle;
     margin: 10px 0 -10px;
@@ -7,13 +7,13 @@
     -ms-text-align-last: left;
     text-align-last: left;
 }
-.header-info_address .city-name {
+.address .city-name {
     font-family: 'Century Gothic Bold', sans-serif;
     font-size: 1.1em;
     color: #d8a00a;
     font-weight: 600;
 }
-.header-info_address p {
+.address p {
     display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -21,7 +21,7 @@
     font-size: 0.9em;
 }
 @media (max-width: 480px) {
-    .header-info_address {
+    .address {
         margin: 10px 0 20px;
     }
 }

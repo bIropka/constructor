@@ -1,4 +1,4 @@
-.header-info_logo {
+.header-logo {
     display: inline-block;
     vertical-align: middle;
     width: 20%;
@@ -6,7 +6,7 @@
     margin: 10px 0 -10px;
 }
 @media (max-width: 640px) {
-    .header-info_logo {
+    .header-logo {
         display: block;
         margin: 20px auto 10px;
     }
