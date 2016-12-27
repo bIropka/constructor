@@ -979,21 +979,36 @@ nav ul li a:active {
     color: #ffffff;
 }
 
-.col-2 .content-block .banner, .col-3 .content-block .banner {
-    flex-wrap: wrap;
+.col-2 .banner-title {
+    font-size: 32px;
 }
-.col-2 .content-block .banner-title, .banner-details, .col-3 .content-block .banner-title, .banner-details {
-    width: 100%;
-    padding: 15px;
+.col-2 .banner-details .banner-discount .text {
+    font-size: 26px;
 }
-.col-2 .content-block .banner-title, .col-3 .content-block .banner-title {
-    text-align: center;
-}
-.col-2 .content-block .banner-title:after, .col-3 .content-block .banner-title:after {
-    display: none;
+.col-2 .banner-details .banner-discount .number {
+    font-size: 52px;
 }
 
+
+@media (min-width: 1280px) {
+    .content-width-small .col-2 .banner, .col-3 .banner {
+        flex-wrap: wrap;
+    }
+    .content-width-small .col-2 .banner-title, .content-width-small .col-2 .banner-details, .col-3 .banner-title, .col-3 .banner-details {
+        width: 100%;
+        padding: 15px;
+    }
+    .content-width-small .col-2 .banner-title, .col-3 .banner-title {
+        text-align: center;
+    }
+    .content-width-small .col-2 .banner-title:after, .col-3 .banner-title:after {
+        display: none;
+    }
+}
 @media (max-width: 1280px) {
+    .banner-title {
+        font-size: 32px;
+    }
     .banner-details .banner-discount .text {
         font-size: 26px;
     }
@@ -1001,19 +1016,37 @@ nav ul li a:active {
         font-size: 52px;
     }
 }
+@media (max-width: 980px) {
+    .banner-title {
+        font-size: 26px;
+    }
+    .banner-details .banner-discount {
+        width: 40%;
+    }
+    .banner-details .banner-info {
+        width: 57%;
+        font-size: smaller;
+    }
+    .banner-details .banner-discount .text {
+        font-size: 22px;
+    }
+    .banner-details .banner-discount .number {
+        font-size: 42px;
+    }
+}
 @media (max-width: 768px) {
     .banner {
-        flex-wrap: wrap;
+        flex-wrap: wrap!important;
     }
     .banner-title, .banner-details {
-        width: 100%;
-        padding: 15px;
+        width: 100%!important;
+        padding: 15px!important;
     }
     .banner-title {
-        text-align: center;
+        text-align: center!important;
     }
     .banner-title:after {
-        display: none;
+        display: none!important;
     }
 
 }
