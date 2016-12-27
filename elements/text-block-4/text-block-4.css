@@ -15,9 +15,8 @@
     margin: 20px 0;
 }
 .text-block-4 blockquote {
-    display: flex;
+    display: block;
     width: 25%;
-    justify-content: space-between;
     margin: 20px 0;
 }
 .text-block-4 blockquote p {
@@ -46,17 +45,27 @@
     line-height: 1;
 }
 
-.content-block.left-sidebar.right-sidebar .text-block-4 .texts-list,
-.content-block.left-sidebar.right-sidebar .text-block-4 blockquote {
+.col-3 .content-block .text-block-4 .texts-list,
+.col-3 .content-block .text-block-4 blockquote {
     width: 100%;
     margin: 10px 0;
 }
-.content-width-small .content-block.left-sidebar.right-sidebar .text-block-4 .text-card {
+
+.content-width-small .col-3 .content-block .text-block-4 .text-card {
     width: 100%;
 }
 
 @media (max-width: 980px) {
     .text-block-4 .text-card {
+        width: 100%;
+    }
+    .text-block-4 .text-info {
+        align-items: center;
+    }
+
+}
+@media (max-width: 768px) {
+    .text-block-4 .texts-list, .text-block-4 blockquote {
         width: 100%;
     }
 }

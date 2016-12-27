@@ -2,14 +2,23 @@
     margin-bottom: 50px;
 }
 .menu-chbx .title {
+    display: inline-block;
     font-family: 'Century Gothic Bold', sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+.menu-chbx .title i {
+    display: none;
+    font-size: smaller;
+    margin-left: 10px;
+}
 .form-menu-chbx {
     display: block;
     width: 100%;
+}
+.form-menu-chbx >  i {
+    display: none;
 }
 .form-menu-chbx .sub-title {
     display: inline-block;
@@ -100,4 +109,76 @@ input[type='checkbox']:checked + label .fa-check-square-o {
 }
 .form-menu-chbx .unpopular {
     display: none;
+}
+
+@media(max-width: 1280px) {
+    .menu-chbx {
+        margin-bottom: 20px;
+    }
+    .menu-chbx .title {
+        cursor: pointer;
+        margin-bottom: 0;
+    }
+    .menu-chbx .title i {
+        display: inline-block;
+        position: relative;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .menu-chbx .title:hover i {
+        padding-left: 10px;
+    }
+    .form-menu-chbx {
+        position: fixed;
+        left: -350px;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        overflow: auto;
+        width: 320px;
+        background: #f3f3f3;
+        z-index: 101;
+        padding: 60px 20px;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        -webkit-box-shadow: 15px 0 25px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 15px 0 25px -10px rgba(0,0,0,0.25);
+        box-shadow: 15px 0 25px -10px rgba(0,0,0,0.25);
+    }
+    .form-menu-chbx.active {
+        left: 0;
+    }
+    .form-menu-chbx > i {
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 26px;
+        padding-right: 3px;
+        border-radius: 100%;
+        border: 2px solid #000000;
+        font-size: large;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .form-menu-chbx > i:hover {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }

@@ -1,0 +1,168 @@
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+}
+.banner-title {
+    width: calc(50% - 90px);
+    background: #acd97f;
+    position: relative;
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 1;
+    padding: 5px 0 5px 20px;
+}
+.banner-title:after {
+    content: '';
+    width: 90px;
+    background: inherit;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    right: -35px;
+    border-right: 1px solid #ffffff;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+.col-3 .content-block .banner-title {
+    font-size: 24px;
+}
+.banner-title span {
+    display: block;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: 'Century Gothic Bold', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+.banner-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% + 90px);
+    padding-left: 100px;
+    background: #fd7e07;
+}
+.banner-discount {
+    display: block;
+    width: 47%;
+    text-align: right;
+    padding-right: 3%;
+}
+.banner-discount .text {
+    display: inline-block;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+}
+.banner-discount .text span {
+    display: block;
+    font-size: smaller;
+    line-height: inherit;
+    color: inherit;
+}
+.banner-discount .number {
+    display: inline-block;
+    font-size: 72px;
+    font-family: 'Arial Bold', sans-serif;
+    color: #ffffff;
+    line-height: 1;
+}
+.banner-info {
+    display: block;
+    width: 50%;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.col-2 .banner-title {
+    font-size: 32px;
+}
+.col-2 .banner-details .banner-discount .text {
+    font-size: 26px;
+}
+.col-2 .banner-details .banner-discount .number {
+    font-size: 52px;
+}
+
+
+@media (min-width: 1280px) {
+    .content-width-small .col-2 .banner, .col-3 .banner {
+        flex-wrap: wrap;
+    }
+    .content-width-small .col-2 .banner-title, .content-width-small .col-2 .banner-details, .col-3 .banner-title, .col-3 .banner-details {
+        width: 100%;
+        padding: 15px;
+    }
+    .content-width-small .col-2 .banner-title, .col-3 .banner-title {
+        text-align: center;
+    }
+    .content-width-small .col-2 .banner-title:after, .col-3 .banner-title:after {
+        display: none;
+    }
+}
+@media (max-width: 1280px) {
+    .banner-title {
+        font-size: 32px;
+    }
+    .banner-details .banner-discount .text {
+        font-size: 26px;
+    }
+    .banner-details .banner-discount .number {
+        font-size: 52px;
+    }
+}
+@media (max-width: 980px) {
+    .banner-title {
+        font-size: 26px;
+    }
+    .banner-details .banner-discount {
+        width: 40%;
+    }
+    .banner-details .banner-info {
+        width: 57%;
+        font-size: smaller;
+    }
+    .banner-details .banner-discount .text {
+        font-size: 22px;
+    }
+    .banner-details .banner-discount .number {
+        font-size: 42px;
+    }
+}
+@media (max-width: 768px) {
+    .banner {
+        flex-wrap: wrap;
+    }
+    .banner-title, .banner-details {
+        width: 100%;
+        padding: 15px;
+    }
+    .banner-title {
+        text-align: center;
+    }
+    .banner-title:after {
+        display: none;
+    }
+
+}
+@media (max-width: 480px) {
+    .banner-details {
+        flex-wrap: wrap;
+    }
+    .banner-discount,  .banner-info {
+        width: 100%;
+        padding: 5px;
+    }
+    .banner-discount {
+        text-align: center;
+    }
+    .banner-discount .text {
+        text-align: right;
+    }
+}

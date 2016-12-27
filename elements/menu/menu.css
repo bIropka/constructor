@@ -7,6 +7,9 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.menu .title i {
+    display: none;
+}
 .menu > ul > li {
     display: block;
     padding-top: 15px;
@@ -53,9 +56,26 @@
     left: -15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+    .menu {
+        margin: 20px 0;
+    }
     .menu .title {
+        display: inline-block;
         margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .menu .title i {
+        display: inline-block;
+        font-size: smaller;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .menu > ul {
+        display: none;
     }
     .menu > ul > li {
         padding-top: 5px;

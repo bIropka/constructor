@@ -1,3 +1,10 @@
+$('.menu .title').click(function() {
+
+    $(this).siblings('ul').slideToggle(200);
+    $(this).find('i').toggleClass('fa-arrow-down fa-arrow-up');
+
+});
+
 $('.menu .sub-title').click(function() {
 
     if ($(this).hasClass('active')) {
@@ -9,6 +16,5 @@ $('.menu .sub-title').click(function() {
         $(this).addClass('active');
         $(this).siblings('ul').slideDown(200);
     }
-
 
 });

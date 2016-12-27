@@ -1,4 +1,4 @@
-.callback {
+.header-info .callback {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -7,7 +7,7 @@
     margin: 10px 0 -10px;
 }
 
-.callback a {
+.header-info .callback a {
     display: block;
     font-size: 1.3em;
     text-decoration: none;
@@ -18,24 +18,13 @@
     margin: 0 0 10px;
 }
 
-.callback button {
-    display: inline-block;
-    padding: 3px 10px 5px;
-    background: #d8a00a;
-    border: none;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    text-transform: lowercase;
-    color: #ffffff;
-}
-@media (max-width: 979px) {
-    .callback a {
+@media (max-width: 980px) {
+    .header-info .callback a {
         margin-bottom: 5px;
     }
 }
 @media (max-width: 480px) {
-    .callback {
+    .header-info .callback {
         margin: 10px 0 20px;
     }
 }

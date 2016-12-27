@@ -5,7 +5,7 @@
     margin: 20px 0;
 }
 .text-block-3 .text-card {
-    width: 32%;
+    width: 31%;
     margin: 10px 0;
 }
 .text-block-3 h3 a {
@@ -21,6 +21,12 @@
     margin: 20px 0;
 }
 
-.content-block.left-sidebar.right-sidebar .text-block-3 .text-card {
+.col-3 .content-block .text-block-3 .text-card {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .text-block-3 .text-card {
+        width: 100%;
+    }
 }

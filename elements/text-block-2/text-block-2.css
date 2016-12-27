@@ -27,7 +27,13 @@
     margin: 20px 0;
 }
 
-.content-block.left-sidebar.right-sidebar .text-block-2 .text,
-.content-block.left-sidebar.right-sidebar .text-block-2 blockquote {
+.col-3 .content-block .text-block-2 .text,
+.col-3 .content-block .text-block-2 blockquote {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .text-block-2 .text, .text-block-2 blockquote {
+        width: 100%;
+    }
 }
