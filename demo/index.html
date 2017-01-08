@@ -2313,51 +2313,51 @@
 
                     <div class="title">Оставить отзыв</div>
 
-                    <fieldset class="form-chooser chooser-stars clearfix">
+                    <fieldset class="form-chooser chooser-stars">
 
                         <div class="fields-label">Оцените продукт</div>
 
-                        <ul>
-                            <li><i class="fa fa-star-o" title="Ужасно"></i></li>
-                            <li><i class="fa fa-star-o" title="Плохо"></i></li>
-                            <li><i class="fa fa-star-o" title="Нормально"></i></li>
-                            <li><i class="fa fa-star-o" title="Хорошо"></i></li>
-                            <li><i class="fa fa-star-o" title="Отлично"></i></li>
-                        </ul>
+                        <div class="items">
+                            <i class="fa fa-star-o" title="Очень плохо"></i>
+                            <i class="fa fa-star-o" title="Плохо"></i>
+                            <i class="fa fa-star-o" title="Нормально"></i>
+                            <i class="fa fa-star-o" title="Хорошо"></i>
+                            <i class="fa fa-star-o" title="Отлично"></i>
+                        </div>
 
-                        <label><input type="text" class="hidden-input" disabled></label>
+                        <label class="disabled-input"><input type="text" disabled></label>
 
                     </fieldset>
 
-                    <fieldset class="form-chooser chooser-circles clearfix">
+                    <fieldset class="form-chooser chooser-circles">
 
                         <div class="fields-label">Качество</div>
 
-                        <ul>
-                            <li><i class="fa fa-circle-thin" title="Ужасно"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Плохо"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Нормально"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Хорошо"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Отлично"></i></li>
-                        </ul>
+                        <div class="items">
+                            <i class="fa fa-circle-thin" title="Очень плохо"></i>
+                            <i class="fa fa-circle-thin" title="Плохо"></i>
+                            <i class="fa fa-circle-thin" title="Нормально"></i>
+                            <i class="fa fa-circle-thin" title="Хорошо"></i>
+                            <i class="fa fa-circle-thin" title="Отлично"></i>
+                        </div>
 
-                        <label><input type="text" class="hidden-input" disabled></label>
+                        <label class="disabled-input"><input type="text" disabled></label>
 
                     </fieldset>
 
-                    <fieldset class="form-chooser chooser-circles clearfix">
+                    <fieldset class="form-chooser chooser-circles">
 
-                        <div class="text">Цена - Качество</div>
+                        <div class="fields-label">Цена - Качество</div>
 
-                        <ul>
-                            <li><i class="fa fa-circle-thin" title="Ужасно"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Плохо"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Нормально"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Хорошо"></i></li>
-                            <li><i class="fa fa-circle-thin" title="Отлично"></i></li>
-                        </ul>
+                        <div class="items">
+                            <i class="fa fa-circle-thin" title="Очень плохо"></i>
+                            <i class="fa fa-circle-thin" title="Плохо"></i>
+                            <i class="fa fa-circle-thin" title="Нормально"></i>
+                            <i class="fa fa-circle-thin" title="Хорошо"></i>
+                            <i class="fa fa-circle-thin" title="Отлично"></i>
+                        </div>
 
-                        <label><input type="text" class="hidden-input" disabled></label>
+                        <label class="disabled-input"><input type="text" disabled></label>
 
                     </fieldset>
 
@@ -2506,14 +2506,14 @@
 
                                 <fieldset>
 
-                                    <label for="abuse-cause">Причина жалобы</label>
-                                    <textarea id="abuse-cause" cols="" rows=""></textarea>
+                                    <label for="abuse-cause-1">Причина жалобы</label>
+                                    <textarea id="abuse-cause-1" cols="" rows=""></textarea>
 
                                 </fieldset>
 
-                                <input type="reset" value="Отмена">
+                                <button class="button-square" type="reset">Отмена</button>
 
-                                <input type="submit" value="Отправить">
+                                <button class="button-square" type="submit">Отправить</button>
 
                                 <p>Жалобы рассматриваются в течение 72 часов</p>
 
@@ -2527,18 +2527,18 @@
 
                         <div class="reviewer-info">
 
-                            <div class="reviewer-name">Лаврентий Венниаминыч</div>
+                            <div class="reviewer-name">Вассисуалий Лоханкин</div>
 
                             <ul>
-                                <li class="reviewer-city">
+                                <li class="clearfix">
                                     <div class="title">Город</div>
                                     <div class="value">Санкт-Петербург</div>
                                 </li>
-                                <li class="reviewer-sex">
+                                <li class="clearfix">
                                     <div class="title">Пол</div>
                                     <div class="value">Мужской</div>
                                 </li>
-                                <li class="reviewer-age">
+                                <li class="clearfix">
                                     <div class="title">Возраст</div>
                                     <div class="value">22</div>
                                 </li>
@@ -2556,7 +2556,7 @@
                                 <i class="fa fa-star-o"></i>
                             </div>
 
-                            <div class="review-title">Delicious</div>
+                            <div class="review-title">Дешево и сердито</div>
 
                             <div class="review-date">19 Август 2016</div>
 
@@ -2564,24 +2564,24 @@
 
                             <ul class="review-rate">
                                 <li>
-                                    <div class="review-rate-title">Качество</div>
-                                    <ul class="review-rate-value">
-                                        <li class="full"></li>
-                                        <li class="full"></li>
-                                        <li class="full"></li>
-                                        <li class="full"></li>
-                                        <li class="empty"></li>
+                                    <div class="title">Качество</div>
+                                    <ul class="value">
+                                        <li><i class="fa fa-circle"></i></li>
+                                        <li><i class="fa fa-circle"></i></li>
+                                        <li><i class="fa fa-circle"></i></li>
+                                        <li><i class="fa fa-circle-thin"></i></li>
+                                        <li><i class="fa fa-circle-thin"></i></li>
                                     </ul>
                                 </li>
 
                                 <li>
-                                    <div class="review-rate-title">Цена - Качество</div>
-                                    <ul class="review-rate-value">
-                                        <li class="full"></li>
-                                        <li class="full"></li>
-                                        <li class="full"></li>
-                                        <li class="full"></li>
-                                        <li class="empty"></li>
+                                    <div class="title">Цена - Качество</div>
+                                    <ul class="value">
+                                        <li><i class="fa fa-circle"></i></li>
+                                        <li><i class="fa fa-circle"></i></li>
+                                        <li><i class="fa fa-circle"></i></li>
+                                        <li><i class="fa fa-circle"></i></li>
+                                        <li><i class="fa fa-circle-thin"></i></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -2590,27 +2590,27 @@
 
                                 <div class="review-helpful-title">Был ли отзыв полезен для вас</div>
 
-                                <div class="review-helpful-chooser">
+                                <div class="review-helpful-chooser clearfix">
                                     <button class="yes" title="Да"><i class="fa fa-thumbs-o-up"></i>1</button>
                                     <button class="no" title="Нет"><i class="fa fa-thumbs-o-down"></i>0</button>
                                 </div>
 
-                            </div>
+                                <div class="review-to-abuse">Пожаловаться на отзыв</div>
 
-                            <div class="review-to-abuse">Пожаловаться на отзыв</div>
+                            </div>
 
                             <form action="#" class="form-abuse">
 
                                 <fieldset>
 
-                                    <label for="abuse-cause">Причина жалобы</label>
-                                    <textarea id="abuse-cause" cols="" rows=""></textarea>
+                                    <label for="abuse-cause-2">Причина жалобы</label>
+                                    <textarea id="abuse-cause-2" cols="" rows=""></textarea>
 
                                 </fieldset>
 
-                                <input type="reset" value="Отмена">
+                                <button class="button-square" type="reset">Отмена</button>
 
-                                <input type="submit" value="Отправить">
+                                <button class="button-square" type="submit">Отправить</button>
 
                                 <p>Жалобы рассматриваются в течение 72 часов</p>
 

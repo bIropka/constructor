@@ -169,4 +169,73 @@ $(document).ready(function () {
 
     });
 
+    /* reviews */
+
+    $('.review-header button').click(function() {
+
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).parent().siblings('.form-review').css('display', 'none');
+        } else {
+            $(this).addClass('active');
+            $(this).parent().siblings('.form-review').css('display', 'inline-block');
+        }
+
+    });
+
+    $('.review-to-abuse').click(function() {
+
+        $(this).parent().siblings('.form-abuse').fadeToggle(0);
+
+    });
+
+
+    var itemValTemp, itemNumTemp, items;
+
+    $('.form-chooser .items i').hover(
+
+        function() {
+
+            itemValTemp = $(this).parents('.form-chooser').find('input[type="text"]').val();
+            itemNumTemp = $(this).siblings('.chosen').index();
+            items = $(this).parent().find('i');
+
+            $(this).siblings('.chosen').removeClass('chosen');
+            $(this).addClass('chosen');
+            fillItems(items);
+            $(this).parents('.form-chooser').find('input[type="text"]').val($(this).attr('title'));
+
+        },
+
+        function() {
+
+            if(itemNumTemp <= 4 && itemNumTemp >= 0) {
+                $(this).removeClass('chosen');
+                $(items[itemNumTemp]).addClass('chosen');
+                fillItems(items);
+                $(this).parents('.form-chooser').find('input[type="text"]').val(itemValTemp);
+            } else {
+                $(this).parent().find('i').removeClass('chosen');
+                $(this).parent().find('i').addClass('fa-star-o').removeClass('fa-star');
+                $(this).parents('.form-chooser').find('input[type="text"]').val('');
+            }
+
+        }
+
+    );
+
+    function fillItems (array) {
+
+        for(var i = 0; i < array.length; i++) {
+
+            if($(array[i]).hasClass('chosen')) {
+                $(array[i]).removeClass('fa-star-o').addClass('fa-star');
+                break;
+            } else {
+                $(array[i]).removeClass('fa-star-o').addClass('fa-star');
+            }
+        }
+
+    }
+
 });

@@ -164,7 +164,10 @@ img {
     right: 0;
     bottom: 0;
 }
-
+fieldset {
+    display: block;
+    border: none;
+}
 label {
     display: block;
 }
@@ -1961,28 +1964,42 @@ input[type='checkbox']:checked + label .fa-check-square-o {
 }
 .form-review .fields-label {
     display: inline-block;
+    vertical-align: top;
     width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    float: left;
     margin-bottom: 10px;
 }
-.form-review .form-chooser ul {
-    width: calc(100% - 175px);
-    float: right;
-    margin-bottom: 10px;
-}
-.form-review .form-chooser ul li {
+.form-review .form-chooser .items {
     display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
 }
-.form-review .form-chooser i {
+.form-review .disabled-input {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.form-review .form-chooser .disabled-input input {
+    display: block;
+    width: 120px;
+    height: 20px;
+    border: none;
+}
+.form-review .form-chooser .items i {
+    display: block;
     color: #B5C54D;
     font-size: 16px;
+    float: left;
+    padding: 3px;
+    cursor: pointer;
 }
-.form-review .chooser-stars i {
+.form-review .chooser-stars .items i {
     font-size: 24px;
 }
+
 .form-review input[type='text'], .form-review textarea {
     display: block;
     border: 1px solid #efefef;
@@ -2164,89 +2181,74 @@ input[type='checkbox']:checked + label .fa-check-square-o {
     border-radius: 0 3px 3px 0;
     margin-left: -1px;
 }
-.review .review-body .review-helpful .abuse {
+
+.review-to-abuse {
     display: inline-block;
     text-decoration: underline;
     vertical-align: middle;
     cursor: pointer;
 }
-.review .review-body .review-helpful .abuse:before {
-    content: '';
-    margin: 0 20px;
-    display: inline-block;
-    vertical-align: middle;
-    height: 2em;
-    border-left: 1px dotted #cccccc;
+.review-to-abuse:hover {
+    text-decoration: none;
 }
-.review .review-body form {
+
+.form-abuse {
     display: none;
-    border-top: 1px dotted #cccccc;
+    border-top: 1px dotted #efefef;
     margin: 20px 0 0 0;
     padding: 20px 0 0 0;
-    text-align: right;
 }
-.review .review-body form fieldset {
+.form-abuse fieldset {
     padding-bottom: 30px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #efefef;
     margin-bottom: 20px;
     text-align: left;
 }
-.review .review-body form fieldset:after {
-    display: block;
-    content: '';
-    clear: both;
+
+.form-abuse fieldset label {
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 10px;
 }
-.review .review-body form fieldset p {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 1.14em;
-    display: inline-block;
-    width: 35%;
-}
-.review .review-body form fieldset label {
-    float: right;
-    width: 60%;
-    height: 210px;
-}
-.review .review-body form fieldset label textarea {
+.form-abuse fieldset textarea {
     display: block;
     width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: 210px;
     padding: 10px 15px;
-    border: 1px solid #cccccc;
+    border: 1px solid #efefef;
+    resize: none;
 }
-.review .review-body form input[type="reset"] {
+.form-abuse button[type="reset"] {
     margin-right: 10px;
     padding: 5px 20px;
     background: #fafafa;
-    border: 1px solid #cccccc;
+    border: 1px solid #efefef;
     background: linear-gradient(to bottom, #dbdbdb, #cccccc);
+    color: #000000;
 }
-.review .review-body form input[type="reset"]:hover {
+.form-abuse button[type="reset"]:hover {
     background: linear-gradient(to bottom, #c8c8c8, #b4b4b4);
 }
-.review .review-body form input[type="submit"] {
+.form-abuse button[type="submit"] {
     padding: 5px 20px;
-    border: 1px solid #cccccc;
+    border: 1px solid #efefef;
     background: #C3D454;
     background: linear-gradient(to bottom, #cbdc58, #b9c94f);
 }
-.review .review-body form input[type="submit"]:hover {
+.form-abuse button[type="submit"]:hover {
     background: linear-gradient(to bottom, #c1d24e, #a5b53b);
 }
-.review .review-body form p {
+.form-abuse p {
     margin-top: 10px;
-    font-size: 0.85em;
+    font-size: 12px;
 }
-.review .review-body form p:before {
+.form-abuse p:before {
     display: block;
     content: '';
     clear: both;
 }
 
-
-.hidden-input {
-    display: none!important;
-}
 
 @media (max-width: 480px) {
 
